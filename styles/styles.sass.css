@@ -94,7 +94,8 @@ body {
   .left-nav .primary-nav {
     height: 500px;
     padding: 15px 10px 10px 30px;
-    background-color: rgba(0, 64, 64, 0.25); }
+    background-color: rgba(0, 64, 64, 0.25);
+    margin-bottom: 100px; }
   .left-nav .secondary-nav {
     display: none;
     color: white;
@@ -112,7 +113,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .copy-wrapper .copy {
-    height: 500px; }
+    height: 500px;
+    margin-bottom: 200px; }
   .copy-wrapper .title {
     font-size: 24px; }
   .copy-wrapper .body-copy {
