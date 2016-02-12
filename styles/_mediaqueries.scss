@@ -3,22 +3,37 @@
 		display: none;
 	}
 
-	.side-nav {
-		background-color: red;
+	.design5-content {
+		display: none;
+	}
+
+	.left-nav {
+		height: 1000px;
 
 		.primary-nav {
-			display: block;
+			height: auto;
+		}
 
-			.secondary-nav {
-				display: none;
-			}
+		.secondary-nav {
+			height: 100%;
 		}
 	}
 	
 }
 
 @media (min-width: 800px) {
-	.design5-extra {
+	.content {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.design5-content {
 		display: none;
+	}
+}
+
+@media (min-width: 900px) {
+	.content {
+		width: 900px;
 	}
 }
