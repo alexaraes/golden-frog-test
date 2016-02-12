@@ -1,17 +1,18 @@
+/*import reset.css file*/
 @import 'reset';
 
+/*universal styling*/
 body {
 	height: 100%;
-	margin: 0;
-	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 	overflow: hidden;
 	box-sizing: border-box;
 }
 
+/*header and header children*/
 .header {
 	overflow: hidden;
-	vertical-align: middle;
 	padding: 25px 0 25px 0;
 	border-bottom: 1px solid black;
 	background-color: rgba(0, 64, 64, 1);
@@ -19,8 +20,8 @@ body {
 
 	.header-name {
 		float: right;
-		width: 15%;
-		margin: 5px 25px 0 0;
+		width: 10%;
+		margin: 20px 25px 0 0;
 		text-align: right;
 	}
 
@@ -32,6 +33,7 @@ body {
 	}
 }
 
+/*wrappers containing left-nav and body-wrapper*/
 .content-wrapper {
 	line-height: 2;
 
@@ -40,6 +42,7 @@ body {
 	}
 }
 
+/*left-aligned nav bar*/
 .left-nav {
 	border-left: 1px solid black;
 	border-right: 1px solid black;
@@ -55,6 +58,7 @@ body {
 	}
 
 	.secondary-nav {
+		color: white;
 		padding: 15px 20px 15px 20px;
 		width: 30%;
 		min-width: 120px;
@@ -62,6 +66,7 @@ body {
 	}
 }
 
+/*body copy and content*/
 .body-wrapper {
 	overflow:scroll; 
 	position:relative; 
@@ -79,6 +84,7 @@ body {
 	}
 }
 
+/*design-5 footer*/
 .footer {
 	position: fixed;
 	width: 100%;
@@ -88,9 +94,11 @@ body {
 
 	li {
 		color: white;
+		font-size: 14px;
 		display: inline-block;
 		margin: 15px;
 	}
 }
 
+/*import media queries from mediaqueries.css partial*/
 @import 'mediaqueries';

@@ -1,4 +1,8 @@
 @media (min-height: 480px) {
+	.header .header-title {
+		font-size: 60px;
+	}
+
 	.left-nav {
 		height: 1000px;
 
@@ -18,13 +22,14 @@
 	.design5-content {
 		display: none;
 	}
-	
+
 	.footer {
 		display: none;
 	}
 }
 
 @media (min-width: 800px) {
+
 	.content {
 		width: 800px;
 		margin: 0 auto;
