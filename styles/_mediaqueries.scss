@@ -8,7 +8,7 @@
 	}
 
 	.left-nav {
-		height: 100vh;
+		height: 2000px;
 		overflow: hidden;
 
 		.primary-nav {
@@ -17,13 +17,17 @@
 		}
 
 		.secondary-nav {
-			display: block;
 			height: 100%;
+			display: block;
 		}
 	}
 
-	.body-wrapper {
-		height: 1000px;
+	.copy-wrapper {
+		height: 2000px;
+
+		.copy {
+			height: auto;
+		}
 	}
 
 	.design5-content {

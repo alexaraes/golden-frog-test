@@ -1,47 +1,56 @@
-/*import reset.css file*/
+/*import _reset.css partial*/
 @import 'reset';
+
+/*Styling Property Orders (properties are in alphabetical order within category)*/
+
+/*Colors*/
+/*Display & Box Model*/
+/*Font & Text*/
+/*Positioning*/
+/*Other Styling*/
+
 
 /*universal styling*/
 body {
+	box-sizing: border-box;
 	height: 100%;
+	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	overflow: hidden;
-	box-sizing: border-box;
 }
 
 /*header and header children*/
 .header {
-	overflow: hidden;
-	padding: 25px 0 25px 0;
-	border-bottom: 1px solid black;
 	background-color: rgba(0, 64, 64, 1);
 	color: white;
+	border-bottom: 1px solid black;
+	overflow: hidden;
+	padding: 25px 0 25px 0;
 
 	.header-name {
-		float: right;
 		margin: 10px 25px 0 0;
 		text-align: right;
+		float: right;
 	}
 
 	.header-title {
+		margin: 5px 0 0 30px;
 		font-size: 24px;
 		float: left;
-		margin: 5px 0 0 30px;
 	}
 }
 
 /*wrappers containing left-nav and body-wrapper*/
 .content-wrapper {
-	line-height: 2;
 	height: 100%;
+	line-height: 2;
 
 	.content {
+		background-color: rgba(0, 64, 64, .25);
 		display: -webkit-flex;
    		display: flex;
    		-webkit-flex-direction: row;
    		flex-direction: row;
-		background-color: rgba(0, 64, 64, .25);
 	}
 }
 
@@ -49,34 +58,34 @@ body {
 .left-nav {
 	border-left: 1px solid black;
 	border-right: 1px solid black;
-	min-width: 150px;
-	height: 500px;
-	overflow: hidden;
-	overflow-y:scroll;
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	height: 500px;
+	min-width: 150px;
+	overflow: hidden;
+	overflow-y:scroll;
 
 	.primary-nav {
-		height: 500px;
-		padding: 15px 10px 10px 30px;
 		background-color: rgba(0, 64, 64, .25);
+		height: 500px;
 		margin-bottom: 100px;
+		padding: 15px 10px 10px 30px;
 	}
 
 	.secondary-nav {
-		display: none;
-		color: white;
-		padding: 15px 20px 15px 20px;
 		background-color: rgba(0, 64, 64, 1);
+		color: white;
+		display: none;
+		padding: 15px 20px 15px 20px;
 	}
 }
 
 /*body copy and content*/
 .copy-wrapper {
+	height: 500px;
 	padding: 20px 30px 0 30px;
 	border-right: 1px solid black;
-	height: 500px;
 	overflow: hidden;
 	overflow-y:scroll;
 	-webkit-box-sizing: border-box;
@@ -97,19 +106,25 @@ body {
 	}
 }
 
+/*Colors*/
+/*Display & Box Model*/
+/*Font & Text*/
+/*Positioning*/
+/*Other Styling*/
+
 /*design-5 footer*/
 .footer {
-	position: fixed;
-	width: 100%;
-	height: 50px;
-	bottom: 0;
 	background-color: rgba(0, 64, 64, 1);
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	position: fixed;
 
 	li {
 		color: white;
-		font-size: 14px;
 		display: inline-block;
 		margin: 15px;
+		font-size: 14px;
 	}
 }
 
