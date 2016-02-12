@@ -49,7 +49,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  box-sizing: border-box; }
+  overflow: hidden; }
 
 .header {
   overflow: hidden;
@@ -76,9 +76,6 @@ body {
   display: flex; }
 
 .left-nav {
-  overflow: scroll;
-  position: relative;
-  height: 480px;
   width: 20%;
   min-width: 75px;
   border-left: 1px solid black;
@@ -86,17 +83,21 @@ body {
   background-color: rgba(0, 64, 64, 0.5);
   padding: 20px; }
 
+.primary-nav {
+  overflow-y: scroll;
+  position: relative;
+  height: 480px; }
+
 .body-wrapper {
   overflow: scroll;
   position: relative;
   height: 480px;
   background-color: rgba(0, 64, 64, 0.25);
-  padding: 20px 0 0 30px; }
+  padding: 20px 30px 0 30px; }
+  .body-wrapper .title {
+    font-size: 24px; }
   .body-wrapper .body-copy {
     text-indent: 3em; }
-
-.title {
-  font-size: 24px; }
 
 .footer {
   position: fixed;
@@ -116,3 +117,7 @@ body {
       display: block; }
       .side-nav .primary-nav .secondary-nav {
         display: none; } }
+
+@media (min-width: 800px) {
+  .design5-extra {
+    display: none; } }
