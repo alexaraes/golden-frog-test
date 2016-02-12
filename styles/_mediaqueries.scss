@@ -1,12 +1,4 @@
 @media (min-height: 480px) {
-	.footer {
-		display: none;
-	}
-
-	.design5-content {
-		display: none;
-	}
-
 	.left-nav {
 		height: 1000px;
 
@@ -18,7 +10,18 @@
 			height: 100%;
 		}
 	}
+
+	.body-wrapper {
+		height: 1000px;
+	}
+
+	.design5-content {
+		display: none;
+	}
 	
+	.footer {
+		display: none;
+	}
 }
 
 @media (min-width: 800px) {
@@ -27,13 +30,11 @@
 		margin: 0 auto;
 	}
 
-	.design5-content {
-		display: none;
-	}
 }
 
 @media (min-width: 900px) {
 	.content {
 		width: 900px;
 	}
+
 }

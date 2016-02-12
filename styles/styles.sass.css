@@ -1,3 +1,49 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   height: 100%;
   margin: 0;
@@ -26,35 +72,33 @@ body {
 
 .content-wrapper {
   line-height: 2; }
-
-.content {
-  display: flex; }
+  .content-wrapper .content {
+    display: flex; }
 
 .left-nav {
   border-left: 1px solid black;
   border-right: 1px solid black; }
-
-.primary-nav {
-  width: 30%;
-  min-width: 120px;
-  overflow-y: scroll;
-  position: relative;
-  height: 480px;
-  padding: 15px 0 15px 30px;
-  background-color: rgba(0, 64, 64, 0.5); }
-
-.secondary-nav {
-  padding: 15px 20px 15px 20px;
-  width: 30%;
-  min-width: 120px;
-  background-color: #004040; }
+  .left-nav .primary-nav {
+    width: 30%;
+    min-width: 120px;
+    overflow-y: scroll;
+    position: relative;
+    height: 480px;
+    padding: 15px 10px 15px 30px;
+    background-color: rgba(0, 64, 64, 0.5); }
+  .left-nav .secondary-nav {
+    padding: 15px 20px 15px 20px;
+    width: 30%;
+    min-width: 120px;
+    background-color: #004040; }
 
 .body-wrapper {
   overflow: scroll;
   position: relative;
   height: 500px;
   background-color: rgba(0, 64, 64, 0.25);
-  padding: 20px 30px 0 30px; }
+  padding: 20px 30px 0 30px;
+  border-right: 1px solid black; }
   .body-wrapper .title {
     font-size: 24px; }
   .body-wrapper .body-copy {
@@ -67,26 +111,28 @@ body {
   bottom: 0;
   background-color: #004040; }
   .footer li {
-    display: inline-block; }
+    color: white;
+    display: inline-block;
+    margin: 15px; }
 
 @media (min-height: 480px) {
-  .footer {
-    display: none; }
-  .design5-content {
-    display: none; }
   .left-nav {
     height: 1000px; }
     .left-nav .primary-nav {
       height: auto; }
     .left-nav .secondary-nav {
-      height: 100%; } }
+      height: 100%; }
+  .body-wrapper {
+    height: 1000px; }
+  .design5-content {
+    display: none; }
+  .footer {
+    display: none; } }
 
 @media (min-width: 800px) {
   .content {
     width: 800px;
-    margin: 0 auto; }
-  .design5-content {
-    display: none; } }
+    margin: 0 auto; } }
 
 @media (min-width: 900px) {
   .content {
