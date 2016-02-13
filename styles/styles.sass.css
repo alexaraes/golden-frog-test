@@ -100,13 +100,27 @@ body {
   .left-nav .primary-nav {
     background-color: rgba(0, 64, 64, 0.25);
     height: 500px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     padding: 15px 10px 10px 30px; }
+    .left-nav .primary-nav a:link {
+      color: #231f20;
+      text-decoration: none; }
+    .left-nav .primary-nav a:visited {
+      color: #231f20; }
+    .left-nav .primary-nav a:hover, .left-nav .primary-nav a:active {
+      color: #d7e8e8; }
   .left-nav .secondary-nav {
     background-color: #004040;
     color: white;
     display: none;
     padding: 15px 20px 15px 20px; }
+    .left-nav .secondary-nav a:link {
+      color: #fff;
+      text-decoration: none; }
+    .left-nav .secondary-nav a:visited {
+      color: #fff; }
+    .left-nav .secondary-nav a:hover, .left-nav .secondary-nav a:active {
+      color: #bfcfcf; }
 
 /*body copy and content*/
 .copy-wrapper {
@@ -126,11 +140,6 @@ body {
   .copy-wrapper .body-copy {
     text-indent: 3em; }
 
-/*Colors*/
-/*Display & Box Model*/
-/*Font & Text*/
-/*Positioning*/
-/*Other Styling*/
 /*design-5 footer*/
 .footer {
   background-color: #004040;
@@ -143,6 +152,13 @@ body {
     display: inline-block;
     margin: 15px;
     font-size: 14px; }
+    .footer li a:link {
+      color: #fff;
+      text-decoration: none; }
+    .footer li a:visited {
+      color: #fff; }
+    .footer li a:hover, .footer li a:active {
+      color: #bfcfcf; }
 
 /*import media queries from mediaqueries.css partial*/
 @media (min-height: 480px) {
@@ -154,7 +170,7 @@ body {
     height: 2000px;
     overflow: hidden; }
     .left-nav .primary-nav {
-      height: auto;
+      height: 250px;
       margin-bottom: 0; }
     .left-nav .secondary-nav {
       height: 100%;

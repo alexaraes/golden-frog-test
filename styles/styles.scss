@@ -2,7 +2,6 @@
 @import 'reset';
 
 /*Styling Property Orders (properties are in alphabetical order within category)*/
-
 /*Colors*/
 /*Display & Box Model*/
 /*Font & Text*/
@@ -69,8 +68,21 @@ body {
 	.primary-nav {
 		background-color: rgba(0, 64, 64, .25);
 		height: 500px;
-		margin-bottom: 100px;
+		margin-bottom: 200px;
 		padding: 15px 10px 10px 30px;
+
+		a:link {
+			color: #231f20;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #231f20;
+		}
+
+		a:hover, a:active {
+			color: #d7e8e8;
+		}
 	}
 
 	.secondary-nav {
@@ -78,6 +90,19 @@ body {
 		color: white;
 		display: none;
 		padding: 15px 20px 15px 20px;
+
+		a:link {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #fff;
+		}
+
+		a:hover, a:active {
+			color: #bfcfcf;
+		}
 	}
 }
 
@@ -119,6 +144,19 @@ body {
 		display: inline-block;
 		margin: 15px;
 		font-size: 14px;
+
+		a:link {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #fff;
+		}
+
+		a:hover, a:active {
+			color: #bfcfcf;
+		}
 	}
 }
 
