@@ -115,10 +115,10 @@ body {
     display: none;
     padding: 15px 20px 15px 20px; }
     .left-nav .secondary-nav a:link {
-      color: #fff;
+      color: white;
       text-decoration: none; }
     .left-nav .secondary-nav a:visited {
-      color: #fff; }
+      color: white; }
     .left-nav .secondary-nav a:hover, .left-nav .secondary-nav a:active {
       color: #bfcfcf; }
 
@@ -153,12 +153,12 @@ body {
     margin: 15px;
     font-size: 14px; }
     .footer li a:link {
-      color: #fff;
+      color: white;
       text-decoration: none; }
     .footer li a:visited {
-      color: #fff; }
+      color: white; }
     .footer li a:hover, .footer li a:active {
-      color: #bfcfcf; }
+      color: rgba(0, 64, 64, 0.5); }
 
 /*import media queries from mediaqueries.css partial*/
 @media (min-height: 480px) {

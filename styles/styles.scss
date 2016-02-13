@@ -1,6 +1,10 @@
 /*import _reset.css partial*/
 @import 'reset';
 
+$darkgreen: rgba(0, 64, 64, 1);
+$medgreen: rgba(0, 64, 64, .5);
+$litegreen: rgba(0, 64, 64, .25);
+
 /*Styling Property Orders (properties are in alphabetical order within category)*/
 /*Colors*/
 /*Display & Box Model*/
@@ -20,7 +24,7 @@ body {
 
 /*header and header children*/
 .header {
-	background-color: rgba(0, 64, 64, 1);
+	background-color: $darkgreen;
 	color: white;
 	border-bottom: 1px solid black;
 	overflow: hidden;
@@ -45,7 +49,7 @@ body {
 	line-height: 2;
 
 	.content {
-		background-color: rgba(0, 64, 64, .25);
+		background-color: $litegreen;
 		display: -webkit-flex;
    		display: flex;
    		-webkit-flex-direction: row;
@@ -66,7 +70,7 @@ body {
 	overflow-y:scroll;
 
 	.primary-nav {
-		background-color: rgba(0, 64, 64, .25);
+		background-color: $litegreen;
 		height: 500px;
 		margin-bottom: 200px;
 		padding: 15px 10px 10px 30px;
@@ -86,18 +90,18 @@ body {
 	}
 
 	.secondary-nav {
-		background-color: rgba(0, 64, 64, 1);
+		background-color: $darkgreen;
 		color: white;
 		display: none;
 		padding: 15px 20px 15px 20px;
 
 		a:link {
-			color: #fff;
+			color: white;
 			text-decoration: none;
 		}
 
 		a:visited {
-			color: #fff;
+			color: white;
 		}
 
 		a:hover, a:active {
@@ -133,7 +137,7 @@ body {
 
 /*design-5 footer*/
 .footer {
-	background-color: rgba(0, 64, 64, 1);
+	background-color: $darkgreen;
 	bottom: 0;
 	height: 50px;
 	width: 100%;
@@ -146,16 +150,16 @@ body {
 		font-size: 14px;
 
 		a:link {
-			color: #fff;
+			color: white;
 			text-decoration: none;
 		}
 
 		a:visited {
-			color: #fff;
+			color: white;
 		}
 
 		a:hover, a:active {
-			color: #bfcfcf;
+			color: $medgreen;
 		}
 	}
 }
